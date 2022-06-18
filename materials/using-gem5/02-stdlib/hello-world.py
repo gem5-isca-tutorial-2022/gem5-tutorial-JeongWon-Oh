@@ -18,3 +18,7 @@ board = SimpleBoard(
   memory=memory,
   cache_hierarchy=cache_hierarchy,
 )
+
+# Set the workload.
+binary = Resource("x86-hello64-static")
+board.set_se_binary_workload(binary)
